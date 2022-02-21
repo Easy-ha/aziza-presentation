@@ -4,10 +4,10 @@ pipeline {
     environment {
 	 AWS_ACCESS_KEY_ID     = credentials('kunle-jenkins-credentials')  // this is now global path might not be needed
          AWS_SECRET_ACCESS_KEY = credentials('kunle-jenkins-credentials')  // might be global path might not be needed
-   dir("./kunle-aziza/image-builds/ghostblog-image"){
+  
     } 
     
-	       
+   dir("./kunle-aziza/image-builds/ghostblog-image"){   
            stage('Build application') {
             steps {
                     sh "pwd"
