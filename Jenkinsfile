@@ -7,14 +7,7 @@ pipeline {
    dir("./kunle-aziza/image-builds/ghostblog-image"){
     } 
     
-	    
-    
-	stages {
-		stage('SCM Checkout') {
-		  steps {
-    
-               git credentialsId: 'git-creds', url:= 'git@github.com:Easy-ha/aziza-presentation.git' ,branch: 'dev-branch'
-		}
+	       
            stage('Build application') {
             steps {
                     sh "pwd"
